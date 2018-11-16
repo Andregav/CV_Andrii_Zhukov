@@ -1,0 +1,7 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+<filesMatch "\.(ico|gif|jpg|png|jpeg)$">
+					ExpiresActive On
+					ExpiresDefault "access plus 11 month"
+					Header append Cache-Control "public"
+				</filesMatch>
